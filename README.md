@@ -737,7 +737,7 @@ plt.show()
 
 
     
-![png](airline_files/airline_19_0.png)
+![png](output_19_0.png)
     
 
 
@@ -776,7 +776,7 @@ plt.show()
 
 
     
-![png](airline_files/airline_22_0.png)
+![png](output_22_0.png)
     
 
 
@@ -831,7 +831,7 @@ plt.show()
 
 
     
-![png](airline_files/airline_24_0.png)
+![png](output_24_0.png)
     
 
 
