@@ -68,3 +68,14 @@ for sn, m in seg.items():
                     '전원 개선 시 상승폭(%p)': round(max(lift(mod, Xs, [c for c in f if c in Xs], [c for c in z if c in Xs]), 0), 1)})
 lt = pd.DataFrame(out); lt.to_csv(OUT + 'lift_table.csv', index=False, encoding='utf-8-sig')
 print(lt.to_string()); print(len(p), 'rows passengers')
+
+# 4) 서비스 9개 전체 순위 (전원 개선 가정)
+ALL9 = {'기내 와이파이': (['Inflight wifi service_good'], []), '온라인 탑승': (['Online boarding_good'], []),
+        '체크인': (['Checkin service_good'], ['Checkin service_normal']), '다리 공간': (['Leg room service_good'], ['Leg room service_normal']),
+        '탑승 서비스': (['On-board service_good'], []), '좌석 편안함': (['Seat comfort_good'], []),
+        '기내 서비스': (['Inflight service_good'], []), '수하물 처리': (['Baggage handling_good'], []),
+        '청결도': (['Cleanliness_good'], ['Cleanliness_normal'])}
+al = pd.DataFrame({'서비스': list(ALL9), '전원 개선 시 상승폭(%p)': [round(lift(mf, b2, f, z), 1) for f, z in ALL9.values()]})
+al = al.sort_values('전원 개선 시 상승폭(%p)', ascending=False)
+al.insert(0, '순위', range(1, len(al) + 1))
+al.to_csv(OUT + 'service_lift_all.csv', index=False, encoding='utf-8-sig')
