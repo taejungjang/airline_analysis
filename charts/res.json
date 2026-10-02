@@ -1,0 +1,41 @@
+{
+ "n": 103904,
+ "sat_rate": 0.43333269171542965,
+ "zero_share": {
+  "Inflight wifi service": 0.029864105327995074,
+  "Ease of Online booking": 0.04318409300893132,
+  "Online boarding": 0.023367724052971973,
+  "Seat comfort": 9.624268555589775e-06,
+  "Inflight entertainment": 0.00013473975977825684,
+  "On-board service": 2.8872805666769326e-05,
+  "Leg room service": 0.004542654758238374,
+  "Baggage handling": 0.0,
+  "Checkin service": 9.624268555589775e-06,
+  "Inflight service": 2.8872805666769326e-05,
+  "Cleanliness": 0.0001154912226670773,
+  "Food and drink": 0.001029796735448106,
+  "Gate location": 9.624268555589775e-06,
+  "Departure/Arrival time convenient": 0.05100862334462581
+ },
+ "na_n": 310,
+ "base": [
+  0.8765218228189211,
+  0.9281358163791855
+ ],
+ "fe": [
+  0.892786680140513,
+  0.9432929018902542
+ ],
+ "pred_base": 0.43708581062678836,
+ "sim": {
+  "wifi": 0.11835453546221192,
+  "board": 0.08169225397946128,
+  "checkin": 0.045791025616566894,
+  "all3": 0.3118672869512971
+ },
+ "actual_good_share": {
+  "Inflight wifi service": 0.3008835078534031,
+  "Online boarding": 0.4954092238989837,
+  "Checkin service": 0.4780759162303665
+ }
+}
